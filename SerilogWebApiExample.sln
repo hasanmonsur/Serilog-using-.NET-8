@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerilogWebApiExample", "SerilogWebApiExample\SerilogWebApiExample.csproj", "{EF76E4BE-46CF-486B-827A-5E663F421746}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF76E4BE-46CF-486B-827A-5E663F421746}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF76E4BE-46CF-486B-827A-5E663F421746}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF76E4BE-46CF-486B-827A-5E663F421746}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF76E4BE-46CF-486B-827A-5E663F421746}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32399EDA-1DB1-4BB7-BCBD-43E38FE28AC3}
+	EndGlobalSection
+EndGlobal
