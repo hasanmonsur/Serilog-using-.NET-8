@@ -1,85 +1,13 @@
-2024-09-21 19:29:41.790 +06:00 [DBG] Hosting starting
-2024-09-21 19:29:42.080 +06:00 [INF] Now listening on: https://localhost:7292
-2024-09-21 19:29:42.084 +06:00 [INF] Now listening on: http://localhost:5014
-2024-09-21 19:29:42.086 +06:00 [DBG] Loaded hosting startup assembly SerilogWebApiExample
-2024-09-21 19:29:42.088 +06:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
-2024-09-21 19:29:42.089 +06:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
-2024-09-21 19:29:42.091 +06:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
-2024-09-21 19:29:42.100 +06:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
-2024-09-21 19:29:42.172 +06:00 [INF] Application started. Press Ctrl+C to shut down.
-2024-09-21 19:29:42.174 +06:00 [INF] Hosting environment: Development
-2024-09-21 19:29:42.176 +06:00 [INF] Content root path: D:\TestProject\SerilogWithWebApi\SerilogWebApiExample
-2024-09-21 19:29:42.178 +06:00 [DBG] Hosting started
-2024-09-21 19:29:42.363 +06:00 [DBG] Connection id "0HN6Q85PMDRG1" accepted.
-2024-09-21 19:29:42.363 +06:00 [DBG] Connection id "0HN6Q85PMDRG0" accepted.
-2024-09-21 19:29:42.365 +06:00 [DBG] Connection id "0HN6Q85PMDRG1" started.
-2024-09-21 19:29:42.367 +06:00 [DBG] Connection id "0HN6Q85PMDRG0" started.
-2024-09-21 19:29:42.388 +06:00 [DBG] Connection id "0HN6Q85PMDRG1" received FIN.
-2024-09-21 19:29:42.388 +06:00 [DBG] Connection id "0HN6Q85PMDRG0" received FIN.
-2024-09-21 19:29:42.394 +06:00 [DBG] Failed to authenticate HTTPS connection.
-System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
-   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
-   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
-   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
-   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
-2024-09-21 19:29:42.394 +06:00 [DBG] Failed to authenticate HTTPS connection.
-System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
-   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
-   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
-   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
-   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
-2024-09-21 19:29:42.419 +06:00 [DBG] Connection id "0HN6Q85PMDRG0" stopped.
-2024-09-21 19:29:42.419 +06:00 [DBG] Connection id "0HN6Q85PMDRG1" stopped.
-2024-09-21 19:29:42.425 +06:00 [DBG] Connection id "0HN6Q85PMDRG0" sending FIN because: "The Socket transport's send loop completed gracefully."
-2024-09-21 19:29:42.425 +06:00 [DBG] Connection id "0HN6Q85PMDRG1" sending FIN because: "The Socket transport's send loop completed gracefully."
-2024-09-21 19:29:43.470 +06:00 [DBG] Connection id "0HN6Q85PMDRG2" accepted.
-2024-09-21 19:29:43.472 +06:00 [DBG] Connection id "0HN6Q85PMDRG2" started.
-2024-09-21 19:29:43.507 +06:00 [DBG] Connection 0HN6Q85PMDRG2 established using the following protocol: "Tls13"
-2024-09-21 19:29:43.567 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7292/swagger/index.html - null null
-2024-09-21 19:29:43.674 +06:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
-2024-09-21 19:29:43.691 +06:00 [DBG] No candidates found for the request path '/swagger/index.html'
-2024-09-21 19:29:43.694 +06:00 [DBG] Request did not match any endpoints
-2024-09-21 19:29:43.747 +06:00 [DBG] Response markup is scheduled to include Browser Link script injection.
-2024-09-21 19:29:43.751 +06:00 [DBG] Response markup is scheduled to include browser refresh script injection.
-2024-09-21 19:29:43.768 +06:00 [DBG] Response markup was updated to include Browser Link script injection.
-2024-09-21 19:29:43.772 +06:00 [DBG] Response markup was updated to include browser refresh script injection.
-2024-09-21 19:29:43.776 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7292/swagger/index.html - 200 null text/html;charset=utf-8 213.1072ms
-2024-09-21 19:29:43.798 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7292/_framework/aspnetcore-browser-refresh.js - null null
-2024-09-21 19:29:43.812 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7292/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 14.1669ms
-2024-09-21 19:29:43.825 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7292/_framework/aspnetcore-browser-refresh.js - null null
-2024-09-21 19:29:43.825 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7292/_vs/browserLink - null null
-2024-09-21 19:29:43.831 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7292/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 6.2555ms
-2024-09-21 19:29:43.871 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7292/_vs/browserLink - null null
-2024-09-21 19:29:43.895 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7292/_vs/browserLink - 200 null text/javascript; charset=UTF-8 69.7358ms
-2024-09-21 19:29:43.911 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7292/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.3104ms
-2024-09-21 19:29:43.940 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7292/swagger/v1/swagger.json - null null
-2024-09-21 19:29:43.943 +06:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
-2024-09-21 19:29:43.945 +06:00 [DBG] Request did not match any endpoints
-2024-09-21 19:29:44.038 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7292/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 98.394ms
-2024-09-21 19:29:44.040 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7292/swagger/v1/swagger.json - null null
-2024-09-21 19:29:44.046 +06:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
-2024-09-21 19:29:44.047 +06:00 [DBG] Request did not match any endpoints
-2024-09-21 19:29:44.049 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7292/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.3292ms
-2024-09-21 19:29:44.946 +06:00 [DBG] Connection id "0HN6Q85PMDRG2" received FIN.
-2024-09-21 19:29:44.951 +06:00 [DBG] The connection queue processing loop for 0HN6Q85PMDRG2 completed.
-2024-09-21 19:29:44.953 +06:00 [DBG] Connection id "0HN6Q85PMDRG2" is closed. The last processed stream ID was 13.
-2024-09-21 19:29:44.955 +06:00 [DBG] Connection id "0HN6Q85PMDRG2" sending FIN because: "The Socket transport's send loop completed gracefully."
-2024-09-21 19:29:44.959 +06:00 [DBG] Connection id "0HN6Q85PMDRG2" stopped.
-2024-09-21 19:29:45.653 +06:00 [DBG] Connection id "0HN6Q85PMDRG3" accepted.
-2024-09-21 19:29:45.655 +06:00 [DBG] Connection id "0HN6Q85PMDRG3" started.
-2024-09-21 19:29:45.659 +06:00 [DBG] Connection 0HN6Q85PMDRG3 established using the following protocol: "Tls13"
-2024-09-21 19:29:45.663 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7292/_framework/aspnetcore-browser-refresh.js - null null
-2024-09-21 19:29:45.668 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7292/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 5.8699ms
-2024-09-21 19:29:45.677 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7292/_vs/browserLink - null null
-2024-09-21 19:29:45.701 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7292/_vs/browserLink - 200 null text/javascript; charset=UTF-8 24.3075ms
-2024-09-21 19:29:45.769 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7292/swagger/v1/swagger.json - null null
-2024-09-21 19:29:45.771 +06:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
-2024-09-21 19:29:45.773 +06:00 [DBG] Request did not match any endpoints
-2024-09-21 19:29:45.774 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7292/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.5505ms
-2024-09-21 19:29:47.569 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7292/ - null null
-2024-09-21 19:29:47.576 +06:00 [DBG] 1 candidate(s) found for the request path '/'
-2024-09-21 19:29:47.578 +06:00 [DBG] Request matched endpoint 'HTTP: GET /'
-2024-09-21 19:29:47.580 +06:00 [DBG] Static files was skipped as the request already matched an endpoint.
-2024-09-21 19:29:47.592 +06:00 [INF] Executing endpoint 'HTTP: GET /'
-2024-09-21 19:29:47.594 +06:00 [INF] Executed endpoint 'HTTP: GET /'
-2024-09-21 19:29:47.595 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7292/ - 200 null text/plain; charset=utf-8 26.8524ms
+2024-09-21 19:58:16.490 +06:00 [INF] Now listening on: https://localhost:7292
+2024-09-21 19:58:16.514 +06:00 [INF] Now listening on: http://localhost:5014
+2024-09-21 19:58:16.565 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-21 19:58:16.566 +06:00 [INF] Hosting environment: Development
+2024-09-21 19:58:16.567 +06:00 [INF] Content root path: D:\TestProject\SerilogWithWebApi\SerilogWebApiExample
+2024-09-21 19:58:17.227 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7292/swagger/index.html - null null
+2024-09-21 19:58:17.432 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7292/swagger/index.html - 200 null text/html;charset=utf-8 209.5456ms
+2024-09-21 19:58:17.456 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7292/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-21 19:58:17.456 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7292/_vs/browserLink - null null
+2024-09-21 19:58:17.475 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7292/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 19.1484ms
+2024-09-21 19:58:17.516 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7292/_vs/browserLink - 200 null text/javascript; charset=UTF-8 60.2071ms
+2024-09-21 19:58:17.555 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7292/swagger/v1/swagger.json - null null
+2024-09-21 19:58:17.645 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7292/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 90.3992ms

@@ -5,30 +5,42 @@ using SerilogWebApiExample.Models;
 
 namespace SerilogWebApiExample.Controllers
 {
-    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class ProductsController : ControllerBase
     {
         private readonly IProductRepository _productRepository;
-
-        public ProductsController(IProductRepository productRepository)
+        private readonly ILogger<ProductsController> _logger;
+        public ProductsController(IProductRepository productRepository, ILogger<ProductsController> logger)
         {
             _productRepository = productRepository;
+            _logger = logger;
+            
         }
 
         [HttpGet]
         public async Task<IActionResult> GetAllProducts()
         {
+            _logger.LogInformation("GET request received at {Time}", DateTime.UtcNow);
             var products = await _productRepository.GetAllProducts();
+            if (products.Count()<=0)
+            {
+                _logger.LogInformation("GET Response : No Data Found ");
+                return NotFound();
+            }
             return Ok(products);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetProductById(int id)
         {
+            _logger.LogInformation("GET request received at {Time}", DateTime.UtcNow);
             var product = await _productRepository.GetProductById(id);
-            if (product == null) return NotFound();
+            if (product == null)
+            {
+                _logger.LogInformation("GET Response : No Data Found ");
+                return NotFound();
+            }
             return Ok(product);
         }
 
